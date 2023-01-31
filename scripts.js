@@ -37,5 +37,6 @@ document.querySelector("#shape").onclick = function () {
   document.querySelector("#timeTaken").innerHTML = timeDifference / 1000 + "<span> seconds </span>";
   
   timeOut = Math.random() * 2000;
+  console.log(timeOut);
   setTimeout(drawShape, timeOut);
 };
