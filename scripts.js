@@ -24,6 +24,7 @@ function calculateFastestTime() {
   } else {
     document.querySelector("#timeTaken").style.color = "white";
   }
+  console.log(fastestTime);
 }
 
 document.querySelector("#shape").onclick = function () {
@@ -37,6 +38,5 @@ document.querySelector("#shape").onclick = function () {
   document.querySelector("#timeTaken").innerHTML = timeDifference / 1000 + "<span> seconds </span>";
   
   timeOut = Math.random() * 2000;
-  console.log(timeOut);
   setTimeout(drawShape, timeOut);
 };
