@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO -->
+    <meta name="author" content="https://linktr.ee/luccasassa" />
+    <meta name="description" content="Luca's little projects. If you found this content useful, please tap the ♥️ icon and give me a follow. Thanks ☺️" />
+
+    <!-- FAVICON -->
+    <link rel="icon" href="https://i.imgur.com/l6Z1OOF.png" />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./template.css">
+
+    <!-- TITLE -->
+    <title>Click tester speed</title>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <h1>Click tester speed</h1>
+    </div>
+
+    <div class="gameSection">
+      <p class="start" id="start"></p>
+      <div class="shape" id="shape"></div>
+      <p class="timeTaken" id="timeTaken"></p>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="./scripts.js"></script>
+
+    <script>
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+              var div = document.createElement('div');
+              div.innerHTML = this.responseText;
+              document.body.appendChild(div)
+          }
+      }
+      
+      xhttp.open("GET", "https://raw.githubusercontent.com/luccasassa/watermarks/main/one.html", true);
+      xhttp.send();
+  </script>
+  </body>
+  
+</html>

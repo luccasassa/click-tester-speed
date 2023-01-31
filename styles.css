@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/css2?family=Tourney:wght@400;500&display=swap);
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Tourney", cursive;
+  background-color: black;
+  overflow: hidden;
+  color: white;
+  user-select: none;
+}
+
+.navbar {
+  background-color: black;
+  width: 100vw;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar h1 {
+  color: white;
+  font-size: 3rem;
+  cursor: default;
+}
+
+.gameSection {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  padding: 3rem;
+  position: relative;
+}
+
+.shape {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  cursor: pointer;
+  position: absolute;
+  left: 50vw;
+  top: 50vh;
+  border-radius: 5px;
+}
+
+.timeTaken {
+  position: absolute;
+  right: 90vw;
+  top: 0;
+  font-size: 25px;
+}
+
+.start {
+  position: absolute;
+  left: 43vw;
+  top: 50vh;
+  font-size: 20px;
+}
+
+.start::before {
+  content: 'Click ⇛';
+}
